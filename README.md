@@ -14,6 +14,8 @@
   - [Alert](#alert)
   - [Prompt](#prompt)
   - [Confirm](#confirm)
+- [JavaScript Variable Declarations](#javascript-variable-declarations)
+
  
 
 ## Comment Types:
@@ -78,6 +80,29 @@ if (isConfirmed) {
 } else {
   // Cancel
 }
+```
+
+## JavaScript Variable Declarations:
+
+### Const:
+const by default - For all variables that won't be reassigned
+```javascript
+const PI = 3.14;
+const config = {apiUrl: '...'};
+```
+
+### Let:
+let when needed - For loop counters or variables that change
+```javascript
+let counter = 0;
+counter++; // Valid
+```
+
+### Var:
+var rarely - Only in specific cases
+```javascript
+// Prefer:
+var something = true;
 ```
 
 
