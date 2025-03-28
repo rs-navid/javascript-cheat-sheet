@@ -183,9 +183,9 @@ typeof [1, 2, 3]     // "object"
 typeof function() {} // "function"
 ```
 
-## 🔘 Strings:
+### Strings:
 
-### Template Literals:
+#### Template Literals:
 ```javascript
 const name = "Alice";
 const greeting = `Hello ${name}!`; // "Hello Alice!"
@@ -196,13 +196,13 @@ const multiLine = `
 `;
 ```
 
-### Length:
+#### Length:
 ```javascript
 const str = "Hello";
 console.log(str.length); // 5
 ```
 
-### Methods:
+#### Methods:
 ```javascript
 "Hello".toUpperCase(); // "HELLO"
 "Hello".toLowerCase(); // "hello"
@@ -226,9 +226,9 @@ console.log(str.length); // 5
 "Hi".padEnd(5, "!"); // "Hi!!!"
 ```
 
-## 🔘 Booleans:
+### Booleans:
 
-### Falsy Values:
+#### Falsy Values:
 ```javascript
 false     // Boolean false
 0         // Number zero
@@ -240,26 +240,76 @@ undefined // Undefined
 NaN       // Not a Number
 ```
 
-## 🔘 Numbers:
+### Numbers:
 
-### Conversion:
+#### Conversion:
 ```javascript
 Number("123")  // 123
 parseFloat("123.45") // 123.45
 parseInt("123px")    // 123
 ```
 
-### Validations:
+#### Validations:
 ```javascript
 function isNumber(value) {
   return typeof value === 'number' && !isNaN(value);
 }
 ```
 
-### Instance Methods:
+#### Instance Methods:
 ```javascript
 (123.456).toFixed(2)     // "123.46" (string)
 (123.456).toPrecision(4) // "123.5" (string)
+```
+
+### Date:
+
+#### Date Declaration:
+```javascript
+const now = new Date(); // Current date and time
+const date = new Date("2023-10-05"); // ISO format (local time)
+const date = new Date(1633036800000); // Milliseconds since Jan 1, 1970
+const now = new Date(); // Current date and time
+```
+
+#### Getter Methods:
+```javascript
+const date = new Date();
+date.getFullYear()    // 2023 (4-digit year)
+date.getMonth()       // 0-11 (0 = January)
+date.getDate()        // 1-31 (day of month)
+date.getDay()         // 0-6 (0 = Sunday, day of week)
+date.getHours()       // 0-23
+date.getMinutes()     // 0-59
+date.getSeconds()     // 0-59
+date.getMilliseconds()// 0-999
+date.getTime()        // Milliseconds since epoch
+date.getTimezoneOffset() // Timezone offset in minutes
+```
+
+#### Setter Methods:
+```javascript
+date.setFullYear(year [, month, day])
+date.setMonth(month [, day])
+date.setDate(day)
+date.setHours(hour [, min, sec, ms])
+date.setMinutes(min [, sec, ms])
+date.setSeconds(sec [, ms])
+date.setMilliseconds(ms)
+date.setTime(milliseconds)
+```
+
+#### Conversion Methods:
+```javascript
+date.toString()       // "Thu Oct 05 2023 13:30:00 GMT+0200"
+date.toDateString()   // "Thu Oct 05 2023"
+date.toTimeString()   // "13:30:00 GMT+0200"
+date.toISOString()    // "2023-10-05T11:30:00.000Z" (UTC)
+date.toUTCString()    // "Thu, 05 Oct 2023 11:30:00 GMT"
+date.toJSON()         // "2023-10-05T11:30:00.000Z" (for JSON)
+date.toLocaleString() // "10/5/2023, 1:30:00 PM" (local format)
+date.toLocaleDateString() // "10/5/2023"
+date.toLocaleTimeString() // "1:30:00 PM"
 ```
 
 ## 🔘 Math Object: Properties and Methods
