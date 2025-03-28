@@ -139,6 +139,50 @@ const interval = setInterval(() => {
 clearInterval(interval);
 ```
 
+## Data Types:
+
+### Primitive Data Types:
+```javascript
+// number:
+let age = 25;
+let pi = 3.14;
+
+// string:
+let name = "Alice";
+let greeting = 'Hello World';
+
+// boolean:
+let isActive = true;
+let isComplete = false;
+
+// undefined:
+let x;
+console.log(x); // undefined
+
+// null:
+let empty = null;
+```
+
+### Non-Primitive (Reference) Type:
+object - Collections of properties
+```javascript
+let person = { name: "John", age: 30 };
+let colors = ["red", "green", "blue"];
+let date = new Date();
+```
+
+### The typeof Operator:
+```javascript
+typeof "Hello"       // "string"
+typeof 42            // "number"
+typeof true          // "boolean"
+typeof undefined     // "undefined"
+typeof null          // "object" (historical bug)
+typeof {a: 1}        // "object"
+typeof [1, 2, 3]     // "object"
+typeof function() {} // "function"
+```
+
 
 
 
