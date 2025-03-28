@@ -15,7 +15,9 @@
   - [Prompt](#prompt)
   - [Confirm](#confirm)
 - [JavaScript Variable Declarations](#javascript-variable-declarations)
-
+  - [Const](#const)
+  - [Let](#let)
+  - [Var](#var)
  
 
 ## Comment Types:
@@ -101,7 +103,6 @@ counter++; // Valid
 ### Var:
 var rarely - Only in specific cases
 ```javascript
-// Prefer:
 var something = true;
 ```
 
