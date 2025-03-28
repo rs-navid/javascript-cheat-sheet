@@ -312,6 +312,74 @@ date.toLocaleDateString() // "10/5/2023"
 date.toLocaleTimeString() // "1:30:00 PM"
 ```
 
+### Arrays:
+
+#### Length:
+```javascript
+const fruits = ['apple', 'banana'];
+console.log(fruits.length); // 2
+```
+
+#### Methods:
+```javascript
+// Add/Remove
+fruits.push('orange');      // Add to end (returns new length)
+fruits.pop();               // Remove from end (returns item)
+fruits.unshift('strawberry'); // Add to start
+fruits.shift();             // Remove from start
+
+// Modify
+fruits.splice(1, 0, 'mango'); // Add at index 1
+fruits.reverse();            // Reverse array
+fruits.sort();               // Sort alphabetically
+// Search
+fruits.includes('apple');    // true
+fruits.indexOf('banana');    // 1
+fruits.find(fruit => fruit.startsWith('b')); // 'banana'
+fruits.findIndex(fruit => fruit.length > 5); // 1
+
+// Transformation
+fruits.map(fruit => fruit.toUpperCase()); // New array
+fruits.filter(fruit => fruit.length > 5); // Filtered array
+fruits.reduce((total, fruit) => total + fruit.length, 0); // Sum lengths
+
+// Iteration
+fruits.forEach(fruit => console.log(fruit));
+fruits.every(fruit => fruit.length > 3); // All satisfy?
+fruits.some(fruit => fruit === 'apple'); // Any satisfy?
+```
+
+#### Validation:
+```javascript
+Array.isArray(fruits); // true (best way)
+fruits instanceof Array; // true
+```
+
+#### Destructuring:
+```javascript
+// Basic Destructuring
+const [first, second] = fruits;
+console.log(first); // 'apple'
+
+// Skipping Items
+const [first, , third] = ['a', 'b', 'c']; // first='a', third='c'
+
+// Default Values
+const [a=1, b=2] = []; // a=1, b=2
+
+// Rest Pattern
+const [head, ...tail] = [1, 2, 3]; // head=1, tail=[2, 3]
+```
+
+#### Spread Operator:
+```javasript
+// Copying Arrays
+const copy = [...fruits]; // Shallow copy
+
+// Merging Arrays
+const moreFruits = [...fruits, 'pear', ...['grape', 'melon']];
+```
+
 ## 🔘 Math Object: Properties and Methods
 ```javascript
 Math.PI        // π (3.141592653589793)
