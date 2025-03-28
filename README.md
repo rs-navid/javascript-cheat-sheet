@@ -262,7 +262,29 @@ function isNumber(value) {
 (123.456).toPrecision(4) // "123.5" (string)
 ```
 
+### 🔘 Math Object: Properties and Methods
+```javascript
+Math.PI        // π (3.141592653589793)
+Math.abs(-5)      // 5 (absolute value)
+Math.sign(-3)     // -1 (sign of number)
+Math.sqrt(16)     // 4 (square root)
+Math.pow(2, 3)    // 8 (2 to the power of 3)
+Math.round(4.7)   // 5 (nearest integer)
+Math.floor(4.9)   // 4 (round down)
+Math.ceil(4.1)    // 5 (round up)
+Math.trunc(4.9)   // 4 (remove decimal)
+Math.min(1, 2, 3)     // 1 (smallest value)
+Math.max(1, 2, 3)     // 3 (largest value)
+Math.random()          // Random float between 0 (inclusive) and 1 (exclusive)
+```
 
+## Random Number in Range:
+```javascript
+function randomInRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+// randomInRange(5, 10) → random integer between 5-10 inclusive
+```
 
 
 
