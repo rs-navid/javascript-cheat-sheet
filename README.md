@@ -240,6 +240,28 @@ undefined // Undefined
 NaN       // Not a Number
 ```
 
+## 🔘 Numbers:
+
+### Conversion:
+```javascript
+Number("123")  // 123
+parseFloat("123.45") // 123.45
+parseInt("123px")    // 123
+```
+
+### Validations:
+```javascript
+function isNumber(value) {
+  return typeof value === 'number' && !isNaN(value);
+}
+```
+
+### Instance Methods:
+```javascript
+(123.456).toFixed(2)     // "123.46" (string)
+(123.456).toPrecision(4) // "123.5" (string)
+```
+
 
 
 
