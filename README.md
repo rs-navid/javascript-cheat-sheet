@@ -4,12 +4,17 @@
 - [Comment Types](#comment-types)
   - [Single-Line Comments](#single-line-comments)
   - [Multi-Line Comments](#multi-line-comments)
-- [Console Methods(Log/ Info/ Warn/ Error)](#console-methods)
+- [Console Methods](#console-methods)
   - [Log](#log)
   - [Info](#info)
   - [Warn](#warn)
   - [Error](#error)
   - [Clear](#clear)
+- [Browser Interaction Methods](#browser-interaction-ethods)
+  - [Alert](#alert)
+  - [prompt](#prompt)
+  - [Log](#log)
+ 
 
 ## Comment Types:
 
@@ -52,3 +57,5 @@ console.error('Error!');      // Error message (red)
 ```javascript
 console.clear();      // Clear messages
 ```
+
+## Browser Interaction Methods:
