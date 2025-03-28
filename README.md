@@ -18,7 +18,9 @@
   - [Const](#const)
   - [Let](#let)
   - [Var](#var)
- 
+- [JavaScript Timing Functions](#javascript-timin-functions)
+  - [Timeout](#timeout)
+  - [Interval](#interval)
 
 ## Comment Types:
 
@@ -105,5 +107,39 @@ var rarely - Only in specific cases
 ```javascript
 var something = true;
 ```
+
+## JavaScript Timing Functions:
+
+### Timeout:
+Use for one-time delayed execution
+```javascript
+// Example
+const timer = setTimeout(() => {
+  console.log('This runs after 2 seconds');
+}, 2000);
+
+// Cancel the timeout before it executes
+clearTimeout(timer);
+```
+
+### Interval:
+Use for repeating delayed executions
+```javascript
+// Example
+let counter = 0;
+const interval = setInterval(() => {
+  counter++;
+  console.log(`Tick ${counter}`);
+  if (counter >= 5) {
+    clearInterval(interval);
+  }
+}, 1000);
+
+// Stop the interval execution
+clearInterval(interval);
+```
+
+
+
 
 
