@@ -4,7 +4,7 @@
 - [Comment Types](#comment-types)
   - [Single-Line Comments](#single-line-comments)
   - [Multi-Line Comments](#multi-line-comments)
-- [Console Methods(Log/ Info/ Warn/ Error)](#console-methods(log/-info/-warn/-error))
+- [Console Methods(Log/ Info/ Warn/ Error)](#Console Methods(Log/ Info/ Warn/ Error))
 
 
 ## Comment Types:
