@@ -12,8 +12,8 @@
   - [Clear](#clear)
 - [Browser Interaction Methods](#browser-interaction-ethods)
   - [Alert](#alert)
-  - [prompt](#prompt)
-  - [Log](#log)
+  - [Prompt](#prompt)
+  - [Confirm](#confirm)
  
 
 ## Comment Types:
@@ -59,3 +59,25 @@ console.clear();      // Clear messages
 ```
 
 ## Browser Interaction Methods:
+
+### Alert:
+```javascript
+alert('This is an alert message!');
+```
+
+### Prompt:
+```javascript
+const name = prompt('Please enter your name:');
+```
+
+### Confirm:
+```javascript
+const isConfirmed = confirm('Are you sure?');
+if (isConfirmed) {
+  // Proceed
+} else {
+  // Cancel
+}
+```
+
+
