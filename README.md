@@ -226,7 +226,19 @@ console.log(str.length); // 5
 "Hi".padEnd(5, "!"); // "Hi!!!"
 ```
 
+## 🔘 Booleans:
 
+### Falsy Values:
+```javascript
+false     // Boolean false
+0         // Number zero
+-0        // Negative zero
+0n        // BigInt zero
+""        // Empty string
+null      // Null
+undefined // Undefined
+NaN       // Not a Number
+```
 
 
 
