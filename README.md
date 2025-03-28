@@ -22,7 +22,7 @@
   - [Timeout](#timeout)
   - [Interval](#interval)
 
-## Comment Types:
+## 🔵 Comment Types:
 
 ### Single-Line Comments:
 ```javascript
@@ -37,7 +37,7 @@ let count = 5; // Can be placed after code
 */
 ```
 
-## Console Methods:
+## 🔘 Console Methods:
 
 ### Log:
 ```javascript
@@ -64,7 +64,7 @@ console.error('Error!');      // Error message (red)
 console.clear();      // Clear messages
 ```
 
-## Browser Interaction Methods:
+## ⚫️ Browser Interaction Methods:
 
 ### Alert:
 ```javascript
@@ -86,7 +86,7 @@ if (isConfirmed) {
 }
 ```
 
-## JavaScript Variable Declarations:
+## ⭕️ JavaScript Variable Declarations:
 
 ### Const:
 const by default - For all variables that won't be reassigned
