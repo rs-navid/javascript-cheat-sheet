@@ -183,6 +183,53 @@ typeof [1, 2, 3]     // "object"
 typeof function() {} // "function"
 ```
 
+## Strings:
+
+### Template Literals:
+```javascript
+const name = "Alice";
+const greeting = `Hello ${name}!`; // "Hello Alice!"
+const multiLine = `
+  This is a
+  multi-line
+  string
+`;
+```
+
+### Length:
+```javascript
+const str = "Hello";
+console.log(str.length); // 5
+```
+
+### Methods:
+```javascript
+"Hello".toUpperCase(); // "HELLO"
+"Hello".toLowerCase(); // "hello"
+"JavaScript".indexOf("Script"); // 4
+"JavaScript".lastIndexOf("a"); // 3
+"JavaScript".includes("Java"); // true
+"JavaScript".startsWith("Java"); // true
+"JavaScript".endsWith("Script"); // true
+"Hello World".slice(6, 11); // "World"
+"Hello World".substring(6, 11); // "World"
+"Hello World".substr(6, 5); // "World" (deprecated)
+"Hello World".charAt(1); // "e"
+"Hello World".charCodeAt(1); // 101 (Unicode)
+"   Hello   ".trim(); // "Hello"
+"   Hello   ".trimStart(); // "Hello   "
+"   Hello   ".trimEnd(); // "   Hello"
+"Hello".repeat(3); // "HelloHelloHello"
+"Hello".replace("e", "a"); // "Hallo"
+"Hello World".split(" "); // ["Hello", "World"]
+"5".padStart(3, "0"); // "005"
+"Hi".padEnd(5, "!"); // "Hi!!!"
+```
+
+
+
+
+
 
 
 
