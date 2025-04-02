@@ -451,7 +451,80 @@ const entries = Object.entries(person);
 // Returns array of [key, value] pairs
 ```
 
+## Functions:
 
+### Traditional Functions:
+```javascript
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+```
+
+### Function Expressions:
+```javascript
+const greet = function(name) {
+  return `Hello, ${name}!`;
+};
+```
+
+### Arrow Functions:
+```javascript
+const greet = (name) => {
+  return `Hello, ${name}!`;
+};
+```
+
+### IIFE (Immediately Invoked Function Expression):
+```javascript
+// Traditional IIFE
+(function() {
+  console.log('Runs immediately');
+})();
+
+// Arrow function IIFE
+(() => {
+  console.log('Also runs immediately');
+})();
+
+// With parameters
+((name) => {
+  console.log(`Hello, ${name}`);
+})('Alice');
+```
+
+### Closures:
+```javascript
+function createCounter() {
+  let count = 0;
+  return function() {
+    count++;
+    return count;
+  };
+}
+
+const counter = createCounter();
+counter(); // 1
+counter(); // 2
+```
+
+### Async Functions:
+```javascript
+// Async/await
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+// Arrow async function
+const fetchData = async () => {
+  // ...
+};
+```
 
 
 ## 🔘 Math Object: Properties and Methods
