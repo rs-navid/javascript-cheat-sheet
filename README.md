@@ -451,7 +451,7 @@ const entries = Object.entries(person);
 // Returns array of [key, value] pairs
 ```
 
-## Functions:
+## 🔘 ⚫️ Functions:
 
 ### Traditional Functions:
 ```javascript
