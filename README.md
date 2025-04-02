@@ -380,6 +380,80 @@ const copy = [...fruits]; // Shallow copy
 const moreFruits = [...fruits, 'pear', ...['grape', 'melon']];
 ```
 
+### Objects:
+
+#### Declaration:
+```javascript
+const person = {
+  name: 'Alice',
+  age: 30,
+  isAdmin: false,
+  greet() {
+    console.log(`Hello, I'm ${this.name}`);
+  }
+};
+```
+
+#### Object Destructuring:
+```javascript
+// Basic destructuring
+const { name, age } = person;
+console.log(name); // 'Alice'
+
+// Renaming variables
+const { name: personName, age: personAge } = person;
+
+// Default values
+const { isAdmin = true, country = 'USA' } = person;
+
+// Nested destructuring
+const user = {
+  id: 1,
+  profile: {
+    email: 'alice@example.com',
+    address: {
+      city: 'New York'
+    }
+  }
+};
+
+const {
+  profile: { 
+    email,
+    address: { city }
+  }
+} = user;
+```
+
+#### Spread Operator:
+```javascript
+// Copying objects
+const personCopy = { ...person };
+
+// Merging objects
+const details = { occupation: 'Developer', country: 'Canada' };
+const completeProfile = { ...person, ...details };
+
+// With overwriting
+const updatedPerson = { ...person, age: 31 };
+```
+
+#### Methods:
+``` javascript
+// Object.keys()
+const keys = Object.keys(person); // ['name', 'age', 'isAdmin', 'greet']
+
+// Object.values()
+const values = Object.values(person); // ['Alice', 30, false, [Function: greet]]
+
+// Object.entries()
+const entries = Object.entries(person);
+// Returns array of [key, value] pairs
+```
+
+
+
+
 ## 🔘 Math Object: Properties and Methods
 ```javascript
 Math.PI        // π (3.141592653589793)
