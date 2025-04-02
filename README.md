@@ -527,7 +527,7 @@ const fetchData = async () => {
 ```
 
 
-## ⚫️ Math Object
+## ⚫️ Math Object:
 ```javascript
 Math.PI        // π (3.141592653589793)
 Math.abs(-5)      // 5 (absolute value)
@@ -551,6 +551,255 @@ function randomInRange(min, max) {
 // randomInRange(5, 10) → random integer between 5-10 inclusive
 ```
 
+## ⚫️ Promises:
+
+### Create Promise:
+```javascript
+// Creating a promise
+const myPromise = new Promise((resolve, reject) => {
+  const success = true; // Simulate condition
+  if (success) {
+    resolve('Operation succeeded!');
+  } else {
+    reject('Operation failed!');
+  }
+});
+```
+
+### Then/ Catch Syntax:
+```javascript
+// Basic promise handling
+myPromise
+  .then(result => {
+    console.log(result); // "Operation succeeded!"
+  })
+  .catch(error => {
+    console.error(error); // "Operation failed!"
+  });
+
+// Chaining .then()
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Fetch error:', error);
+  });
+
+// Finally clause
+somePromise
+  .then(result => { /*...*/ })
+  .catch(error => { /*...*/ })
+  .finally(() => {
+    console.log('This runs regardless of success/failure');
+  });
+```
+
+### Async/Await Syntax:
+```javascript
+// Basic async function
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error('Error:', error);
+    throw error; // Re-throw if you want calling code to handle it
+  }
+}
+
+// Immediately-invoked async function
+(async () => {
+  const data = await fetchData();
+  console.log('Data received:', data);
+})();
+```
+
+## ⚫️ Error Handling:
+```javascript
+// Try-catch block
+try {
+  // Code that might throw an error
+  const result = riskyOperation();
+  console.log(result);
+} catch (error) {
+  console.error('Something went wrong:', error.message);
+} finally {
+  console.log('This always executes');
+}
+
+// Throwing custom errors
+function validateInput(input) {
+  if (!input) {
+    throw new Error('Input cannot be empty');
+  }
+  if (input.length < 5) {
+    throw new Error('Input must be at least 5 characters');
+  }
+}
+```
+
+### Error Types:
+```javascript
+// Built-in error types
+try {
+  // ...
+} catch (error) {
+  if (error instanceof TypeError) {
+    console.error('Type error:', error.message);
+  } else if (error instanceof ReferenceError) {
+    console.error('Reference error:', error.message);
+  } else if (error instanceof SyntaxError) {
+    console.error('Syntax error:', error.message);
+  } else {
+    console.error('Unknown error:', error.message);
+  }
+}
+
+// Creating custom error types
+class ValidationError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'ValidationError';
+    this.date = new Date();
+  }
+}
+
+try {
+  throw new ValidationError('Invalid input');
+} catch (error) {
+  if (error instanceof ValidationError) {
+    console.error(`${error.name} at ${error.date}: ${error.message}`);
+  }
+}
+```
+
+## ⚫️ Storage:
+```javascript
+// Set item
+localStorage.setItem('username', 'john_doe');
+sessionStorage.setItem('token', 'abc123');
+
+// Get item
+const username = localStorage.getItem('username'); // 'john_doe'
+const token = sessionStorage.getItem('token'); // 'abc123'
+
+// Remove item
+localStorage.removeItem('username');
+sessionStorage.removeItem('token');
+
+// Clear all
+localStorage.clear();
+sessionStorage.clear();
+
+// Check length
+const localStorageSize = localStorage.length;
+const sessionStorageSize = sessionStorage.length;
+```
+
+## ⚫️ JSON:
+```javascript
+// Stringify (Object → JSON string)
+const obj = { name: "John", age: 30, city: "New York" };
+const jsonString = JSON.stringify(obj);
+// '{"name":"John","age":30,"city":"New York"}'
+
+// Parse (JSON string → Object)
+const parsedObj = JSON.parse(jsonString);
+// { name: "John", age: 30, city: "New York" }
+```
+
+## ⚫️ Fetch API:
+
+### Basic Requests:
+```javascript
+// GET request
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+
+// POST request with JSON
+fetch('https://api.example.com/data', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({ key: 'value' })
+})
+.then(response => response.json())
+.then(data => console.log('Success:', data))
+.catch(error => console.error('Error:', error));
+```
+
+### Response Handling:
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const contentType = response.headers.get('content-type');
+    if (contentType.includes('application/json')) {
+      return response.json();
+    }
+    return response.text();
+  })
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+### Async/Await Syntax:
+```javascript
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error('Fetch error:', error);
+    throw error; // Re-throw if you want calling code to handle it
+  }
+}
+```
+
+### Error Handling Patterns:
+```javascript
+// Better error handling with status codes
+async function fetchWithErrorHandling(url) {
+  const response = await fetch(url);
+  
+  if (response.status === 404) {
+    throw new Error('Resource not found');
+  }
+  if (response.status === 401) {
+    throw new Error('Unauthorized');
+  }
+  if (response.status === 500) {
+    throw new Error('Server error');
+  }
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  
+  return await response.json();
+}
+
+// Usage
+fetchWithErrorHandling('https://api.example.com/data')
+  .then(data => console.log(data))
+  .catch(error => {
+    console.error('Error:', error.message);
+    // Show user-friendly message based on error type
+  });
+```
 
 
 
