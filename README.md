@@ -22,7 +22,7 @@
   - [Timeout](#timeout)
   - [Interval](#interval)
 
-## 🔘 Comment Types:
+## ⚫️ Comment Types:
 
 ### Single-Line Comments:
 ```javascript
@@ -37,7 +37,7 @@ let count = 5; // Can be placed after code
 */
 ```
 
-## 🔘 Console Methods:
+## ⚫️ Console Methods:
 
 ### Log:
 ```javascript
@@ -64,7 +64,7 @@ console.error('Error!');      // Error message (red)
 console.clear();      // Clear messages
 ```
 
-## 🔘 Browser Interaction Methods:
+## ⚫️ Browser Interaction Methods:
 
 ### Alert:
 ```javascript
@@ -86,7 +86,7 @@ if (isConfirmed) {
 }
 ```
 
-## 🔘 JavaScript Variable Declarations:
+## ⚫️ JavaScript Variable Declarations:
 
 ### Const:
 const by default - For all variables that won't be reassigned
@@ -108,7 +108,7 @@ var rarely - Only in specific cases
 var something = true;
 ```
 
-## 🔘 JavaScript Timing Functions:
+## ⚫️ JavaScript Timing Functions:
 
 ### Timeout:
 Use for one-time delayed execution
@@ -139,7 +139,7 @@ const interval = setInterval(() => {
 clearInterval(interval);
 ```
 
-## 🔘 Data Types:
+## ⚫️ Data Types:
 
 ### Primitive Data Types:
 ```javascript
@@ -451,7 +451,7 @@ const entries = Object.entries(person);
 // Returns array of [key, value] pairs
 ```
 
-## 🔘 ⚫️ Functions:
+## ⚫️ Functions:
 
 ### Traditional Functions:
 ```javascript
@@ -527,7 +527,7 @@ const fetchData = async () => {
 ```
 
 
-## 🔘 Math Object: Properties and Methods
+## ⚫️ Math Object
 ```javascript
 Math.PI        // π (3.141592653589793)
 Math.abs(-5)      // 5 (absolute value)
