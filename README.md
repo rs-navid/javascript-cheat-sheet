@@ -108,6 +108,267 @@ var rarely - Only in specific cases
 var something = true;
 ```
 
+## ⚫️ Conditional Statements:
+```javascript
+// Basic if/else
+if (condition) {
+  // code to execute if true
+} else {
+  // code to execute if false
+}
+
+// Multiple conditions
+if (score > 90) {
+  grade = 'A';
+} else if (score > 80) {
+  grade = 'B';
+} else if (score > 70) {
+  grade = 'C';
+} else {
+  grade = 'F';
+}
+
+// Ternary operator (shorthand if/else)
+const message = isLoggedIn ? 'Welcome back!' : 'Please log in';
+
+// Switch statement
+switch (dayOfWeek) {
+  case 0:
+    dayName = 'Sunday';
+    break;
+  case 1:
+    dayName = 'Monday';
+    break;
+  // ...
+  default:
+    dayName = 'Unknown';
+}
+
+// Switch with multiple cases
+switch (month) {
+  case 12:
+  case 1:
+  case 2:
+    season = 'Winter';
+    break;
+  case 3:
+  case 4:
+  case 5:
+    season = 'Spring';
+    break;
+  // ...
+}
+```
+
+## ⚫️ Loops:
+```javascript
+// Standard for loop
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+// Loop through array
+const fruits = ['apple', 'banana', 'orange'];
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+// While loop
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+
+// Do-while (executes at least once)
+let j = 0;
+do {
+  console.log(j);
+  j++;
+} while (j < 10);
+
+// Iterate over array values
+const colors = ['red', 'green', 'blue'];
+for (const color of colors) {
+  console.log(color);
+}
+
+// Works with strings
+const str = 'hello';
+for (const char of str) {
+  console.log(char);
+}
+
+// Iterate over object properties
+const person = { name: 'John', age: 30 };
+for (const key in person) {
+  console.log(`${key}: ${person[key]}`);
+}
+
+// Check if property belongs to object
+for (const key in person) {
+  if (person.hasOwnProperty(key)) {
+    console.log(key); // Only own properties (not inherited)
+  }
+}
+
+// Break statement
+for (let i = 0; i < 10; i++) {
+  if (i === 5) break; // Exit loop
+  console.log(i);
+}
+
+// Continue statement
+for (let i = 0; i < 10; i++) {
+  if (i % 2 === 0) continue; // Skip even numbers
+  console.log(i);
+}
+```
+
+## ⚫️ Operators:
+
+### Arithmetic Operators:
+```javascript
+// Basic arithmetic
+const sum = 10 + 5;    // 15 (Addition)
+const diff = 10 - 5;   // 5 (Subtraction)
+const product = 10 * 5; // 50 (Multiplication)
+const quotient = 10 / 5; // 2 (Division)
+const remainder = 10 % 3; // 1 (Modulus/Remainder)
+const power = 2 ** 3;  // 8 (Exponentiation)
+
+// Increment/Decrement
+let count = 1;
+count++; // Post-increment (returns 1, then sets to 2)
+++count; // Pre-increment (sets to 3, then returns 3)
+count--; // Post-decrement (returns 3, then sets to 2)
+--count; // Pre-decrement (sets to 1, then returns 1)
+```
+
+### Assignment Operators:
+```javascript
+let x = 10; // Simple assignment
+
+x += 5;  // x = x + 5
+x -= 3;  // x = x - 3
+x *= 2;  // x = x * 2
+x /= 4;  // x = x / 4
+x %= 3;  // x = x % 3
+x **= 2; // x = x ** 2
+
+// Destructuring assignment
+const [a, b] = [1, 2];       // a=1, b=2
+const {name, age} = person;   // name=person.name, age=person.age
+```
+
+### Comparison Operators:
+```javascript
+// Strict equality (type + value)
+3 === 3   // true
+3 === '3' // false
+
+// Loose equality (value only)
+3 == 3    // true
+3 == '3'  // true
+
+// Inequality
+3 !== 4     // true (strict)
+3 != '4'    // true (loose)
+5 > 3       // true
+5 < 3       // false
+5 >= 5      // true
+5 <= 4      // false
+```
+
+### Logical Operators:
+```javascript
+// AND (&&) - returns first falsy or last truthy
+true && false    // false
+0 && 'anything'  // 0
+1 && 'hello'     // 'hello'
+
+// OR (||) - returns first truthy or last falsy
+false || true    // true
+null || 'hello'  // 'hello'
+0 || false       // false
+
+// NOT (!)
+!true           // false
+!!'hello'       // true (double negation converts to boolean)
+
+// Nullish coalescing (??) - returns right if left is null/undefined
+null ?? 'default'    // 'default'
+0 ?? 'default'       // 0 (unlike || which would return 'default')
+```
+
+### Ternary Operator:
+```javascript
+// Syntax: condition ? exprIfTrue : exprIfFalse
+const status = age >= 18 ? 'Adult' : 'Minor';
+
+// Chained ternary
+const grade = score >= 90 ? 'A'
+             : score >= 80 ? 'B'
+             : score >= 70 ? 'C'
+             : 'F';
+```
+
+### Type Operators:
+```javascript
+typeof 42        // 'number'
+typeof 'hello'   // 'string'
+typeof true      // 'boolean'
+typeof undefined // 'undefined'
+typeof null      // 'object' (historical bug)
+typeof {}        // 'object'
+typeof []        // 'object'
+typeof Symbol()  // 'symbol'
+typeof BigInt(1) // 'bigint'
+
+// Instanceof
+[] instanceof Array    // true
+new Date() instanceof Date // true
+
+// in operator (checks property existence)
+'name' in person // true if person has 'name' property
+```
+
+### Spread Operator:
+
+#### Array Operations:
+```javascript
+// Copying arrays
+const original = [1, 2, 3];
+const copy = [...original]; // [1, 2, 3]
+
+// Concatenating arrays
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+const combined = [...arr1, ...arr2]; // [1, 2, 3, 4]
+```
+
+#### Object Operations:
+```javascript
+// Copying objects
+const obj = { a: 1, b: 2 };
+const objCopy = { ...obj }; // { a: 1, b: 2 }
+
+// Merging objects
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+const merged = { ...obj1, ...obj2 }; // { a: 1, b: 2, c: 3, d: 4 }
+
+// Overwriting properties
+const defaults = { theme: 'light', fontSize: 14 };
+const userSettings = { theme: 'dark' };
+const finalSettings = { ...defaults, ...userSettings };
+// { theme: 'dark', fontSize: 14 }
+
+// Adding new properties
+const user = { name: 'Alice' };
+const withAge = { ...user, age: 30 }; // { name: 'Alice', age: 30 }
+```
+
 ## ⚫️ JavaScript Timing Functions:
 
 ### Timeout:
