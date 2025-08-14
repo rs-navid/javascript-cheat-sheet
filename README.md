@@ -5,7 +5,7 @@
 - [Comments](#comments)  
 [Console](#console) 
 
-    log, warn,info, error, clear
+    (log, warn, info, error, clear)
 - [Browser Interaction](#browser)  
 - [Variables & Consts](#vars)  
 - [Conditional Statements](#conditional)  
