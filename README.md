@@ -13,6 +13,7 @@
 |[Operators](#operators)|Arithmetic, Assignment, Comparison, Logical, Ternary, Typeof, Spread|
 |[Timing Functions](#timing) | timeout, interval, clear|
 |[Data Types](#data-types)|Primitive Data Types(number, string, boolean, null, undefined), Non-Primitive (Reference) Types(array, object, date)|
+|[Strings](#strings)|Template Literals, length, |
 
 
 
@@ -503,9 +504,9 @@ typeof [1, 2, 3]     // "object"
 typeof function() {} // "function"
 ```
 
-### Strings:
+<h2 id="strings"> ✔️ Strings: </h2>
 
-#### Template Literals:
+### Template Literals:
 ```javascript
 const name = "Alice";
 const greeting = `Hello ${name}!`; // "Hello Alice!"
@@ -516,13 +517,13 @@ const multiLine = `
 `;
 ```
 
-#### Length:
+### Length:
 ```javascript
 const str = "Hello";
 console.log(str.length); // 5
 ```
 
-#### Methods:
+### Methods:
 ```javascript
 "Hello".toUpperCase(); // "HELLO"
 "Hello".toLowerCase(); // "hello"
