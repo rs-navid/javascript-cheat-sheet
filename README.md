@@ -5,6 +5,7 @@
 |Title|Contents|
 |-----|--------|
 |[Comments](#comments)|Single-Line, Multi-Line|
+|[Console](#console)| lo, info, warn, error, clear|
 
 - [Comments](#comments) (Single-Line, Multi-Line)
 - [Console](#console) (Log, Warn, Info, Wrror, Clear)
