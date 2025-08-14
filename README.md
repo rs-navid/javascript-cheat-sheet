@@ -13,7 +13,7 @@
 |[Operators](#operators)|Arithmetic, Assignment, Comparison, Logical, Ternary, Typeof, Spread|
 |[Timing Functions](#timing) | timeout, interval, clear|
 |[Data Types](#data-types)|Primitive Data Types(number, string, boolean, null, undefined), Non-Primitive (Reference) Types(array, object, date)|
-|[Strings](#strings)|Template Literals, length, padStart, padEnd, startsWith, endsWith, indexof, lastIndexof, includes, slice, substring, substr, split, repeat, replace|
+|[Strings](#strings)|Template Literals, length, padStart, padEnd, startsWith, endsWith, indexOf, lastIndexOf, includes, slice, substring, substr, split, repeat, replace, trim, trimStart, trimEnd, toUppercase, toLowercase, charAt|
 
 
 
