@@ -3,9 +3,7 @@
 ## Table of Contents
 
 - [Comments](#comments)  
-- [Console](#console) 
-
-    (log, warn, info, error, clear)
+- [Console](#console) (log, warn, info, error, clear)
 - [Browser Interaction](#browser)  
 - [Variables & Consts](#vars)  
 - [Conditional Statements](#conditional)  
