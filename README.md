@@ -2,6 +2,10 @@
 
 ## Table of Contents
 
+|Title|Contents|
+|-----|--------|
+|[Comments](#comments)|Single-Line, Multi-Line|
+
 - [Comments](#comments) (Single-Line, Multi-Line)
 - [Console](#console) (Log, Warn, Info, Wrror, Clear)
 - [Browser Interaction](#browser)  (Alert, Prompt, Confirm)
