@@ -3,9 +3,9 @@
 ## Table of Contents
 
 - [Comments](#comments) (Single-Line, Multi-Line)
-- [Console](#console) (log, warn, info, error, clear)
+- [Console](#console) (Log, Warn, Info, Wrror, Clear)
 - [Browser Interaction](#browser)  (Alert, Prompt, Confirm)
-- [Variables & Consts](#vars)  
+- [Variables & Consts](#vars)  (Var, Let, Const)
 - [Conditional Statements](#conditional)  
 - [Loops](#loops)  
 - [Operators](#operators)    
