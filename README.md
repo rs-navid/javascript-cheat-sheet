@@ -9,6 +9,7 @@
 |[Browser Interaction](#browser)| alert, confirm, prompt|
 |[Variables & Consts](#vars)|var, let, const|
 |[Conditional Statements](#conditional)|if, ternary, switch|
+|[Loops](#loops)|for, while, do-while, for-of, for-in|
 
 - [Comments](#comments) (Single-Line, Multi-Line)
 - [Console](#console) (Log, Warn, Info, Wrror, Clear)
