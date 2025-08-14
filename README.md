@@ -8,7 +8,7 @@
 |[Console](#console)| log, info, warn, error, clear|
 |[Browser Interaction](#browser)| alert, confirm, prompt|
 |[Variables & Consts](#vars)|var, let, const|
-|[Conditional Statements]|if, ternary, switch|
+|[Conditional Statements](#conditional)|if, ternary, switch|
 
 - [Comments](#comments) (Single-Line, Multi-Line)
 - [Console](#console) (Log, Warn, Info, Wrror, Clear)
