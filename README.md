@@ -185,6 +185,7 @@ var something = true;
 ```
 
 <h2 id="conditional"> ✔️ Conditional Statements: </h2>
+
 ```javascript
 // Basic if/else
 if (condition) {
