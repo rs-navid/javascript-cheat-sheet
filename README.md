@@ -17,7 +17,7 @@
 |[Booleans](#booleans)| truthy, falsy(null, 0, "", [], undefined, NaN)|
 |[Numbers](#numbers)|Conversion(Number, BigInt, parseInt, parseFloat), Validations(isNaN), toFixed, toPrecision|
 |[Date](#date)|Declaration, Getters, Setters, Conversions|
-|[Arrays](#arrays)|validation, destructuring,  spread operator|
+|[Arrays](#arrays)|length, validation, destructuring,  spread operator, push, pop, shift, unshift, sort, reverse, map, filter, find, findIndex, every, some|
 
 
 - [Comments](#comments) (Single-Line, Multi-Line)
