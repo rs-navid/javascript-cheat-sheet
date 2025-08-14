@@ -20,6 +20,8 @@
 |[Arrays](#arrays)|length, validation, destructuring,  spread operator, push, pop, shift, unshift, sort, reverse, map, filter, find, findIndex, every, some, forEach, includes, indexOf, lastIndexOf, splice, slice, join|
 |[Objects](#objects)|Destructuring, Spread Operator|
 |[Functions](#functions)|Traditional Functions, Function Expressions, Arrow Functions, IIFE, Closures, Async Functions|
+|[Math Object](#math)|PI, abs, trunc, floor, ceil, sqrt, pow, min, max, rand, round|
+|[Promises](#promises)|async/await, then/catch, error handling|
 
 
 - [Comments](#comments) (Single-Line, Multi-Line)
@@ -853,7 +855,7 @@ const fetchData = async () => {
 ```
 
 
-## ⚫️ Math Object:
+<h2 id="math"> ✔️ Math Object: </h2>
 ```javascript
 Math.PI        // π (3.141592653589793)
 Math.abs(-5)      // 5 (absolute value)
@@ -877,7 +879,7 @@ function randomInRange(min, max) {
 // randomInRange(5, 10) → random integer between 5-10 inclusive
 ```
 
-## ⚫️ Promises:
+<h2 id="promises"> ✔️ Promises: </h2>
 
 ### Create Promise:
 ```javascript
