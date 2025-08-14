@@ -1,7 +1,7 @@
 # JavaScript Cheat Sheet
 
 ## Table of Contents:
-- [Comment Types](#comment-types)
+- [Comments](#comment-types)
   - [Single-Line Comments](#single-line-comments)
   - [Multi-Line Comments](#multi-line-comments)
 - [Console Methods](#console-methods)
