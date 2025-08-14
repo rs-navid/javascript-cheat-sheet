@@ -18,6 +18,8 @@
 |[Numbers](#numbers)|Conversion(Number, BigInt, parseInt, parseFloat), Validations(isNaN), toFixed, toPrecision|
 |[Date](#date)|Declaration, Getters, Setters, Conversions|
 |[Arrays](#arrays)|length, validation, destructuring,  spread operator, push, pop, shift, unshift, sort, reverse, map, filter, find, findIndex, every, some, forEach, includes, indexOf, lastIndexOf, splice, slice, join|
+|[Objects](#objects)|Destructuring, Spread Operator|
+|[Functions](#functions)|Traditional Functions, Function Expressions, Arrow Functions, IIFE, Closures, Async Functions|
 
 
 - [Comments](#comments) (Single-Line, Multi-Line)
@@ -704,9 +706,9 @@ const copy = [...fruits]; // Shallow copy
 const moreFruits = [...fruits, 'pear', ...['grape', 'melon']];
 ```
 
-### Objects:
+<h2 id="objects"> ✔️ Objects: </h2>
 
-#### Declaration:
+### Declaration:
 ```javascript
 const person = {
   name: 'Alice',
@@ -718,7 +720,7 @@ const person = {
 };
 ```
 
-#### Object Destructuring:
+### Object Destructuring:
 ```javascript
 // Basic destructuring
 const { name, age } = person;
@@ -749,7 +751,7 @@ const {
 } = user;
 ```
 
-#### Spread Operator:
+### Spread Operator:
 ```javascript
 // Copying objects
 const personCopy = { ...person };
@@ -762,7 +764,7 @@ const completeProfile = { ...person, ...details };
 const updatedPerson = { ...person, age: 31 };
 ```
 
-#### Methods:
+### Methods:
 ``` javascript
 // Object.keys()
 const keys = Object.keys(person); // ['name', 'age', 'isAdmin', 'greet']
@@ -775,7 +777,7 @@ const entries = Object.entries(person);
 // Returns array of [key, value] pairs
 ```
 
-## ⚫️ Functions:
+<h2 id="functions"> ✔️ Functions: </h2>
 
 ### Traditional Functions:
 ```javascript
