@@ -16,7 +16,8 @@
 |[Strings](#strings)|Template Literals, length, padStart, padEnd, startsWith, endsWith, indexOf, lastIndexOf, includes, slice, substring, substr, split, repeat, replace, trim, trimStart, trimEnd, toUpperCase, toLowerCase, charAt|
 |[Booleans](#booleans)| truthy, falsy(null, 0, "", [], undefined, NaN)|
 |[Numbers](#numbers)|Conversion(Number, BigInt, parseInt, parseFloat), Validations(isNaN), toFixed, toPrecision|
-
+|[Date](#date)|Declaration, Getters, Setters, Conversions|
+|[Arrays](#arrays)|validation, destructuring,  spread operator|
 
 
 - [Comments](#comments) (Single-Line, Multi-Line)
@@ -585,9 +586,9 @@ function isNumber(value) {
 (123.456).toPrecision(4) // "123.5" (string)
 ```
 
-### Date:
+<h2 id="date"> ✔️ Date: </h2>
 
-#### Date Declaration:
+### Date Declaration:
 ```javascript
 const now = new Date(); // Current date and time
 const date = new Date("2023-10-05"); // ISO format (local time)
@@ -595,7 +596,7 @@ const date = new Date(1633036800000); // Milliseconds since Jan 1, 1970
 const now = new Date(); // Current date and time
 ```
 
-#### Getter Methods:
+### Getter Methods:
 ```javascript
 const date = new Date();
 date.getFullYear()    // 2023 (4-digit year)
@@ -610,7 +611,7 @@ date.getTime()        // Milliseconds since epoch
 date.getTimezoneOffset() // Timezone offset in minutes
 ```
 
-#### Setter Methods:
+### Setter Methods:
 ```javascript
 date.setFullYear(year [, month, day])
 date.setMonth(month [, day])
@@ -622,7 +623,7 @@ date.setMilliseconds(ms)
 date.setTime(milliseconds)
 ```
 
-#### Conversion Methods:
+### Conversion Methods:
 ```javascript
 date.toString()       // "Thu Oct 05 2023 13:30:00 GMT+0200"
 date.toDateString()   // "Thu Oct 05 2023"
@@ -635,15 +636,15 @@ date.toLocaleDateString() // "10/5/2023"
 date.toLocaleTimeString() // "1:30:00 PM"
 ```
 
-### Arrays:
+<h2 id="arrays"> ✔️ Arrays: </h2>
 
-#### Length:
+### Length:
 ```javascript
 const fruits = ['apple', 'banana'];
 console.log(fruits.length); // 2
 ```
 
-#### Methods:
+### Methods:
 ```javascript
 // Add/Remove
 fruits.push('orange');      // Add to end (returns new length)
@@ -672,13 +673,13 @@ fruits.every(fruit => fruit.length > 3); // All satisfy?
 fruits.some(fruit => fruit === 'apple'); // Any satisfy?
 ```
 
-#### Validation:
+### Validation:
 ```javascript
 Array.isArray(fruits); // true (best way)
 fruits instanceof Array; // true
 ```
 
-#### Destructuring:
+### Destructuring:
 ```javascript
 // Basic Destructuring
 const [first, second] = fruits;
@@ -694,7 +695,7 @@ const [a=1, b=2] = []; // a=1, b=2
 const [head, ...tail] = [1, 2, 3]; // head=1, tail=[2, 3]
 ```
 
-#### Spread Operator:
+### Spread Operator:
 ```javasript
 // Copying Arrays
 const copy = [...fruits]; // Shallow copy
