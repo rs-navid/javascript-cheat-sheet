@@ -11,6 +11,8 @@
 |[Conditional Statements](#conditional)|if, ternary, switch|
 |[Loops](#loops)|for, while, do-while, for-of, for-in, break, continue|
 |[Operators](#operators)|Arithmetic, Assignment, Comparison, Logical, Ternary, Typeof, Spread|
+|[Timing Functions](#timing) | timeout, interval, clear|
+
 
 - [Comments](#comments) (Single-Line, Multi-Line)
 - [Console](#console) (Log, Warn, Info, Wrror, Clear)
