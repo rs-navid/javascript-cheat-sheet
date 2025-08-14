@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-|Title|Contents|
-|-----|--------|
+|     Title    |     Contents    |
+|--------------|-----------------|
 |[Comments](#comments)|Single-Line, Multi-Line|
 |[Console](#console)| log, info, warn, error, clear|
 |[Browser Interaction](#browser)| alert, confirm, prompt|
