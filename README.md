@@ -20,8 +20,9 @@
 |[Arrays](#arrays)|length, validation, destructuring,  spread operator, push, pop, shift, unshift, sort, reverse, map, filter, find, findIndex, every, some, forEach, includes, indexOf, lastIndexOf, splice, slice, join|
 |[Objects](#objects)|Destructuring, Spread Operator|
 |[Functions](#functions)|Traditional Functions, Function Expressions, Arrow Functions, IIFE, Closures, Async Functions|
-|[Math Object](#math)|PI, abs, trunc, floor, ceil, sqrt, pow, min, max, rand, round|
-|[Promises](#promises)|async/await, then/catch, error handling|
+|[Math Object](#math)|PI, abs, sign, trunc, floor, ceil, sqrt, pow, min, max, random, round|
+|[Promises](#promises)|async/await, then/catch|
+|[Error Handling](#errors)|try/catch, throw error|
 
 
 - [Comments](#comments) (Single-Line, Multi-Line)
@@ -856,6 +857,7 @@ const fetchData = async () => {
 
 
 <h2 id="math"> ✔️ Math Object: </h2>
+
 ```javascript
 Math.PI        // π (3.141592653589793)
 Math.abs(-5)      // 5 (absolute value)
@@ -946,7 +948,8 @@ async function fetchData() {
 })();
 ```
 
-## ⚫️ Error Handling:
+<h2 id="errors"> ✔️ Error Handling: </h2>
+
 ```javascript
 // Try-catch block
 try {
