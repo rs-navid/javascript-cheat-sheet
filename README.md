@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-- [Comments](#comments)  
+- [Comments](#commentss)  
   - [Single-Line Comments](#single-line-comments)  
   - [Multi-Line Comments](#multi-line-comments)  
 - [Console Methods](#console-methods)  
