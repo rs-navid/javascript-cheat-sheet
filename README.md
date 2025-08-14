@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Comments](#comments)  
+- [Comments](#comments) (Single-Line, Multi-Line)
 - [Console](#console) (log, warn, info, error, clear)
 - [Browser Interaction](#browser)  
 - [Variables & Consts](#vars)  
