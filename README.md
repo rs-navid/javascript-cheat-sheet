@@ -5,7 +5,7 @@
 - [Comments](#comments)  
   - [Single-Line Comments](#single-line-comments)  
   - [Multi-Line Comments](#multi-line-comments)  
-- [Console Methods](#console)  
+- [Console](#console)  
   - [Log](#log)  
   - [Info](#info)  
   - [Warn](#warn)  
@@ -15,11 +15,11 @@
   - [Alert](#alert)  
   - [Prompt](#prompt)  
   - [Confirm](#confirm)  
-- [Var/ Const](#vars)  
+- [Variables & Consts](#vars)  
   - [Const](#const)  
   - [Let](#let)  
   - [Var](#var)  
-- [Conditional Statements](#conditional-statements)  
+- [Conditional Statements](#conditional)  
   - [If / Else](#if--else)  
   - [Switch](#switch)  
   - [Ternary Operator](#ternary-operator)  
@@ -162,7 +162,7 @@ if (isConfirmed) {
 }
 ```
 
-<h2 id="vars"> Var/ Const: </h2>
+<h2 id="vars"> ✔️ Variables & Consts: </h2>
 
 ### Const:
 const by default - For all variables that won't be reassigned
@@ -184,7 +184,7 @@ var rarely - Only in specific cases
 var something = true;
 ```
 
-## ⚫️ Conditional Statements:
+<h2 id="conditional"> ✔️ Conditional Statements: </h2>
 ```javascript
 // Basic if/else
 if (condition) {
@@ -236,7 +236,7 @@ switch (month) {
 }
 ```
 
-## ⚫️ Loops:
+<h2 id="loops"> ✔️ Loops: </h2>
 ```javascript
 // Standard for loop
 for (let i = 0; i < 10; i++) {
