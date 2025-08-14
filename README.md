@@ -20,16 +20,7 @@
   - [Let](#let)  
   - [Var](#var)  
 - [Conditional Statements](#conditional)  
-  - [If / Else](#if--else)  
-  - [Switch](#switch)  
-  - [Ternary Operator](#ternary-operator)  
 - [Loops](#loops)  
-  - [For Loop](#for-loop)  
-  - [While Loop](#while-loop)  
-  - [Do-While Loop](#do-while-loop)  
-  - [For...of Loop](#forof-loop)  
-  - [For...in Loop](#forin-loop)  
-  - [Break / Continue](#break--continue)  
 - [Operators](#operators)  
   - [Arithmetic Operators](#arithmetic-operators)  
   - [Assignment Operators](#assignment-operators)  
@@ -238,6 +229,7 @@ switch (month) {
 ```
 
 <h2 id="loops"> ✔️ Loops: </h2>
+
 ```javascript
 // Standard for loop
 for (let i = 0; i < 10; i++) {
