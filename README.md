@@ -98,7 +98,7 @@
   - [Async/Await Syntax](#asyncawait-syntax-1)  
   - [Error Handling Patterns](#error-handling-patterns)
 
-## ⚫️ Comments:
+## Comments:
 
 ### Single-Line Comments:
 ```javascript
