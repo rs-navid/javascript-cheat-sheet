@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Comments](#comments)  
-[Console](#console) 
+- [Console](#console) 
 
     (log, warn, info, error, clear)
 - [Browser Interaction](#browser)  
