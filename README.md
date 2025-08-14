@@ -12,6 +12,8 @@
 |[Loops](#loops)|for, while, do-while, for-of, for-in, break, continue|
 |[Operators](#operators)|Arithmetic, Assignment, Comparison, Logical, Ternary, Typeof, Spread|
 |[Timing Functions](#timing) | timeout, interval, clear|
+|[Data Types](#data-types)|Primitive Data Types(number, string, boolean, null, undefined), Non-Primitive (Reference) Types(array, object, date)|
+
 
 
 - [Comments](#comments) (Single-Line, Multi-Line)
@@ -457,7 +459,7 @@ const interval = setInterval(() => {
 clearInterval(interval);
 ```
 
-## ⚫️ Data Types:
+<h2 id="data-types"> ✔️ Data Types: </h2>
 
 ### Primitive Data Types:
 ```javascript
