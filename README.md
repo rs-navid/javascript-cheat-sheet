@@ -1,7 +1,7 @@
 # JavaScript Cheat Sheet
 
 ## Table of Contents:
-- [Comments](#comment-types)
+- [Comments](#comments)
   - [Single-Line Comments](#single-line-comments)
   - [Multi-Line Comments](#multi-line-comments)
 - [Console Methods](#console-methods)
@@ -22,7 +22,7 @@
   - [Timeout](#timeout)
   - [Interval](#interval)
 
-## ⚫️ Comment Types:
+## ⚫️ Comments:
 
 ### Single-Line Comments:
 ```javascript
