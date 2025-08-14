@@ -1,8 +1,8 @@
 # JavaScript Cheat Sheet
 
-# Table of Contents
+## Table of Contents
 
-- [Comments](#commentss)  
+- [Comments](#comments)  
   - [Single-Line Comments](#single-line-comments)  
   - [Multi-Line Comments](#multi-line-comments)  
 - [Console Methods](#console-methods)  
