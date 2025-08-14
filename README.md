@@ -5,17 +5,17 @@
 - [Comments](#comments)  
   - [Single-Line Comments](#single-line-comments)  
   - [Multi-Line Comments](#multi-line-comments)  
-- [Console Methods](#console-methods)  
+- [Console Methods](#console)  
   - [Log](#log)  
   - [Info](#info)  
   - [Warn](#warn)  
   - [Error](#error)  
   - [Clear](#clear)  
-- [Browser Interaction Methods](#browser-interaction-methods)  
+- [Browser Interaction](#browser)  
   - [Alert](#alert)  
   - [Prompt](#prompt)  
   - [Confirm](#confirm)  
-- [JavaScript Variable Declarations](#javascript-variable-declarations)  
+- [Var/ Const](#vars)  
   - [Const](#const)  
   - [Let](#let)  
   - [Var](#var)  
@@ -113,7 +113,7 @@ let count = 5; // Can be placed after code
 */
 ```
 
-## ⚫️ Console Methods:
+<h2 id="console"> ✔️ Console: </h2>
 
 ### Log:
 ```javascript
@@ -140,7 +140,7 @@ console.error('Error!');      // Error message (red)
 console.clear();      // Clear messages
 ```
 
-## ⚫️ Browser Interaction Methods:
+<h2 id="browser"> ✔️ Browser Interaction: </h2>
 
 ### Alert:
 ```javascript
@@ -162,7 +162,7 @@ if (isConfirmed) {
 }
 ```
 
-## ⚫️ JavaScript Variable Declarations:
+<h2 id="vars"> Var/ Const: </h2>
 
 ### Const:
 const by default - For all variables that won't be reassigned
