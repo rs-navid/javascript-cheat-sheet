@@ -14,6 +14,8 @@
 |[Timing Functions](#timing) | timeout, interval, clear|
 |[Data Types](#data-types)|Primitive Data Types(number, string, boolean, null, undefined), Non-Primitive (Reference) Types(array, object, date)|
 |[Strings](#strings)|Template Literals, length, padStart, padEnd, startsWith, endsWith, indexOf, lastIndexOf, includes, slice, substring, substr, split, repeat, replace, trim, trimStart, trimEnd, toUpperCase, toLowerCase, charAt|
+|[Booleans](#booleans)| truthy, falsy(null, 0, "", [], undefined, NaN)|
+|[Numbers](#numbers)|Conversion(Number, BigInt, parseInt, parseFloat), Validations(isNaN), toFixed, toPrecision|
 
 
 
@@ -547,7 +549,7 @@ console.log(str.length); // 5
 "Hi".padEnd(5, "!"); // "Hi!!!"
 ```
 
-### Booleans:
+<h2 id="booleans"> ✔️ Booleans: </h2>
 
 #### Falsy Values:
 ```javascript
@@ -561,23 +563,23 @@ undefined // Undefined
 NaN       // Not a Number
 ```
 
-### Numbers:
+<h2 id="numbers"> ✔️ Numbers: </h2>
 
-#### Conversion:
+### Conversion:
 ```javascript
 Number("123")  // 123
 parseFloat("123.45") // 123.45
 parseInt("123px")    // 123
 ```
 
-#### Validations:
+### Validations:
 ```javascript
 function isNumber(value) {
   return typeof value === 'number' && !isNaN(value);
 }
 ```
 
-#### Instance Methods:
+### Instance Methods:
 ```javascript
 (123.456).toFixed(2)     // "123.46" (string)
 (123.456).toPrecision(4) // "123.5" (string)
