@@ -8,19 +8,8 @@
 - [Variables & Consts](#vars)  
 - [Conditional Statements](#conditional)  
 - [Loops](#loops)  
-- [Operators](#operators)  
-  - [Arithmetic Operators](#arithmetic-operators)  
-  - [Assignment Operators](#assignment-operators)  
-  - [Comparison Operators](#comparison-operators)  
-  - [Logical Operators](#logical-operators)  
-  - [Ternary Operator](#ternary-operator-1)  
-  - [Type Operators](#type-operators)  
-  - [Spread Operator](#spread-operator)  
-    - [Array Operations](#array-operations)  
-    - [Object Operations](#object-operations)  
-- [JavaScript Timing Functions](#javascript-timing-functions)  
-  - [Timeout](#timeout)  
-  - [Interval](#interval)  
+- [Operators](#operators)    
+- [Timing Functions](#timing)  
 - [Data Types](#data-types)  
   - [Primitive Data Types](#primitive-data-types)  
   - [Non-Primitive (Reference) Types](#non-primitive-reference-type)  
@@ -281,7 +270,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-## ⚫️ Operators:
+<h2 id="operators"> ✔️ Operators: </h2>
 
 ### Arithmetic Operators:
 ```javascript
@@ -425,7 +414,7 @@ const user = { name: 'Alice' };
 const withAge = { ...user, age: 30 }; // { name: 'Alice', age: 30 }
 ```
 
-## ⚫️ JavaScript Timing Functions:
+<h2 id="timing"> ✔️ Timing Functions: </h2>
 
 ### Timeout:
 Use for one-time delayed execution
