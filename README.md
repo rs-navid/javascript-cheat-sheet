@@ -21,8 +21,11 @@
 |[Objects](#objects)|Destructuring, Spread Operator|
 |[Functions](#functions)|Traditional Functions, Function Expressions, Arrow Functions, IIFE, Closures, Async Functions|
 |[Math Object](#math)|PI, abs, sign, trunc, floor, ceil, sqrt, pow, min, max, random, round|
-|[Promises](#promises)|async/await, then/catch|
+|[Promises](#promises)|new promise, async/await, then/catch|
 |[Error Handling](#errors)|try/catch, throw error|
+|[Local/ Session Storage](#storage)| length, setItem, getItem, removeItem, clear|
+|[JSON](#json)|stringify, parse|
+
 
 
 - [Comments](#comments) (Single-Line, Multi-Line)
@@ -1008,7 +1011,8 @@ try {
 }
 ```
 
-## ⚫️ Storage:
+<h2 id="storage"> ✔️ Local/ Session Storage: </h2>
+
 ```javascript
 // Set item
 localStorage.setItem('username', 'john_doe');
@@ -1031,7 +1035,8 @@ const localStorageSize = localStorage.length;
 const sessionStorageSize = sessionStorage.length;
 ```
 
-## ⚫️ JSON:
+<h2 id="json"> ✔️ JSON: </h2>
+
 ```javascript
 // Stringify (Object → JSON string)
 const obj = { name: "John", age: 30, city: "New York" };
