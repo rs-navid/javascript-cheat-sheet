@@ -4,7 +4,7 @@
 
 - [Comments](#comments) (Single-Line, Multi-Line)
 - [Console](#console) (log, warn, info, error, clear)
-- [Browser Interaction](#browser)  
+- [Browser Interaction](#browser)  (Alert, Prompt, Confirm)
 - [Variables & Consts](#vars)  
 - [Conditional Statements](#conditional)  
 - [Loops](#loops)  
