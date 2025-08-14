@@ -25,16 +25,9 @@
 |[Error Handling](#errors)|try/catch, throw error|
 |[Local/ Session Storage](#storage)| length, setItem, getItem, removeItem, clear|
 |[JSON](#json)|stringify, parse|
+|[Fetch API](#fetch)| method, body, response, error handling|
 
 
-
-- [Storage](#storage)  
-- [JSON](#json)  
-- [Fetch API](#fetch-api)  
-  - [Basic Requests](#basic-requests)  
-  - [Response Handling](#response-handling)  
-  - [Async/Await Syntax](#asyncawait-syntax-1)  
-  - [Error Handling Patterns](#error-handling-patterns)
 
 <h2 id="comments"> ✔️ Comments: </h2>
 
@@ -993,7 +986,7 @@ const parsedObj = JSON.parse(jsonString);
 // { name: "John", age: 30, city: "New York" }
 ```
 
-## ⚫️ Fetch API:
+<h2 id="fetch"> ✔️ Fetch API: </h2>
 
 ### Basic Requests:
 ```javascript
