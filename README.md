@@ -7,7 +7,7 @@
 |[Comments](#comments)|Single-Line, Multi-Line, JSDoc|
 |[Console Output Methods](#console)| log, info, warn, error, clear|
 |[Dialog Methods](#browser)| alert, confirm, prompt|
-|[Variables & Consts](#vars)|var, let, const|
+|[Variable Declarations](#vars)|var, let, const|
 |[Conditional Statements](#conditional)|if, ternary, switch|
 |[Loops](#loops)|for, while, do-while, for-of, for-in, break, continue|
 |[Operators](#operators)|Arithmetic, Assignment, Comparison, Logical, Ternary, Typeof, Spread|
@@ -94,7 +94,7 @@ console.clear();              // Clear messages
 ### Alert:
 ```javascript
 // Displays a message.
-// Returns nothing
+// Returns nothing.
 alert('This is an alert message!');
 ```
 
@@ -118,7 +118,7 @@ if (isConfirmed) {
 }
 ```
 
-<h2 id="vars"> ✔️ Variables & Consts: </h2>
+<h2 id="vars"> ✔️ Variable Declarations: </h2>
 
 ### Const:
 const by default - For all variables that won't be reassigned
@@ -292,18 +292,18 @@ x **= 2; // x = x ** 2
 
 // Destructuring assignment
 const [a, b] = [1, 2];       // a=1, b=2
-const {name, age} = person;   // name=person.name, age=person.age
+const {name, age} = person;  // name=person.name, age=person.age
 ```
 
 ### Comparison Operators:
 ```javascript
 // Strict equality (type + value)
-3 === 3   // true
-3 === '3' // false
+3 === 3     // true
+3 === '3'   // false
 
 // Loose equality (value only)
-3 == 3    // true
-3 == '3'  // true
+3 == 3      // true
+3 == '3'    // true
 
 // Inequality
 3 !== 4     // true (strict)
@@ -317,18 +317,18 @@ const {name, age} = person;   // name=person.name, age=person.age
 ### Logical Operators:
 ```javascript
 // AND (&&) - returns first falsy or last truthy
-true && false    // false
-0 && 'anything'  // 0
-1 && 'hello'     // 'hello'
+true && false        // false
+0 && 'anything'      // 0
+1 && 'hello'         // 'hello'
 
 // OR (||) - returns first truthy or last falsy
-false || true    // true
-null || 'hello'  // 'hello'
-0 || false       // false
+false || true        // true
+null || 'hello'      // 'hello'
+0 || false           // false
 
 // NOT (!)
-!true           // false
-!!'hello'       // true (double negation converts to boolean)
+!true                // false
+!!'hello'            // true (double negation converts to boolean)
 
 // Nullish coalescing (??) - returns right if left is null/undefined
 null ?? 'default'    // 'default'
