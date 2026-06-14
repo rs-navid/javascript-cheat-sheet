@@ -4,9 +4,9 @@
 
 |     Title    |     Contents    |
 |--------------|-----------------|
-|[Comments](#comments)|Single-Line, Multi-Line|
-|[Console](#console)| log, info, warn, error, clear|
-|[Browser Interaction](#browser)| alert, confirm, prompt|
+|[Comments](#comments)|Single-Line, Multi-Line, JSDoc|
+|[Console Output Methods](#console)| log, info, warn, error, clear|
+|[Dialog Methods](#browser)| alert, confirm, prompt|
 |[Variables & Consts](#vars)|var, let, const|
 |[Conditional Statements](#conditional)|if, ternary, switch|
 |[Loops](#loops)|for, while, do-while, for-of, for-in, break, continue|
@@ -44,7 +44,25 @@ let count = 5; // Can be placed after code
 */
 ```
 
-<h2 id="console"> ✔️ Console: </h2>
+### JSDoc Comments:
+```javascript
+/**
+ * JSDoc comment
+ * Used for documentation
+ */
+
+/**
+ * Returns sum of two numbers
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+function sum(a, b) {
+    return a + b;
+}
+```
+
+<h2 id="console"> ✔️ Console Output Methods: </h2>
 
 ### Log:
 ```javascript
@@ -68,24 +86,31 @@ console.error('Error!');      // Error message (red)
 
 ### Clear: 
 ```javascript
-console.clear();      // Clear messages
+console.clear();              // Clear messages
 ```
 
-<h2 id="browser"> ✔️ Browser Interaction: </h2>
+<h2 id="browser"> ✔️ Dialog Methods: </h2>
 
 ### Alert:
 ```javascript
+// Displays a message.
+// Returns nothing
 alert('This is an alert message!');
 ```
 
 ### Prompt:
 ```javascript
+// Displays an input field.
+// Returns a string or null.
 const name = prompt('Please enter your name:');
 ```
 
 ### Confirm:
 ```javascript
+// Displays OK and Cancel buttons.
+// Returns true or false.
 const isConfirmed = confirm('Are you sure?');
+
 if (isConfirmed) {
   // Proceed
 } else {
