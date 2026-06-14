@@ -264,12 +264,12 @@ for (let i = 0; i < 10; i++) {
 ### Arithmetic Operators:
 ```javascript
 // Basic arithmetic
-const sum = 10 + 5;    // 15 (Addition)
-const diff = 10 - 5;   // 5 (Subtraction)
-const product = 10 * 5; // 50 (Multiplication)
-const quotient = 10 / 5; // 2 (Division)
+const sum = 10 + 5;       // 15 (Addition)
+const diff = 10 - 5;      // 5 (Subtraction)
+const product = 10 * 5;   // 50 (Multiplication)
+const quotient = 10 / 5;  // 2 (Division)
 const remainder = 10 % 3; // 1 (Modulus/Remainder)
-const power = 2 ** 3;  // 8 (Exponentiation)
+const power = 2 ** 3;     // 8 (Exponentiation)
 
 // Increment/Decrement
 let count = 1;
@@ -461,8 +461,13 @@ let empty = null;
 ### Non-Primitive (Reference) Type:
 object - Collections of properties
 ```javascript
+// object:
 let person = { name: "John", age: 30 };
+
+// array:
 let colors = ["red", "green", "blue"];
+
+// date:
 let date = new Date();
 ```
 
@@ -499,26 +504,26 @@ console.log(str.length); // 5
 
 ### Methods:
 ```javascript
-"Hello".toUpperCase(); // "HELLO"
-"Hello".toLowerCase(); // "hello"
-"JavaScript".indexOf("Script"); // 4
-"JavaScript".lastIndexOf("a"); // 3
-"JavaScript".includes("Java"); // true
+"Hello".toUpperCase();           // "HELLO"
+"Hello".toLowerCase();           // "hello"
+"JavaScript".indexOf("Script");  // 4
+"JavaScript".lastIndexOf("a");   // 3
+"JavaScript".includes("Java");   // true
 "JavaScript".startsWith("Java"); // true
 "JavaScript".endsWith("Script"); // true
-"Hello World".slice(6, 11); // "World"
-"Hello World".substring(6, 11); // "World"
-"Hello World".substr(6, 5); // "World" (deprecated)
-"Hello World".charAt(1); // "e"
-"Hello World".charCodeAt(1); // 101 (Unicode)
-"   Hello   ".trim(); // "Hello"
-"   Hello   ".trimStart(); // "Hello   "
-"   Hello   ".trimEnd(); // "   Hello"
-"Hello".repeat(3); // "HelloHelloHello"
-"Hello".replace("e", "a"); // "Hallo"
-"Hello World".split(" "); // ["Hello", "World"]
-"5".padStart(3, "0"); // "005"
-"Hi".padEnd(5, "!"); // "Hi!!!"
+"Hello World".slice(6, 11);      // "World"
+"Hello World".substring(6, 11);  // "World"
+"Hello World".substr(6, 5);      // "World" (deprecated)
+"Hello World".charAt(1);         // "e"
+"Hello World".charCodeAt(1);     // 101 (Unicode)
+"   Hello   ".trim();            // "Hello"
+"   Hello   ".trimStart();       // "Hello   "
+"   Hello   ".trimEnd();         // "   Hello"
+"Hello".repeat(3);               // "HelloHelloHello"
+"Hello".replace("e", "a");       // "Hallo"
+"Hello World".split(" ");        // ["Hello", "World"]
+"5".padStart(3, "0");            // "005"
+"Hi".padEnd(5, "!");             // "Hi!!!"
 ```
 
 <h2 id="booleans"> ✔️ Booleans: </h2>
@@ -539,7 +544,7 @@ NaN       // Not a Number
 
 ### Conversion:
 ```javascript
-Number("123")  // 123
+Number("123")        // 123
 parseFloat("123.45") // 123.45
 parseInt("123px")    // 123
 ```
