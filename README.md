@@ -13,8 +13,8 @@
 |[Operators](#operators)|Arithmetic, Assignment, Comparison, Logical, Ternary, Typeof, Spread|
 |[Timing Functions](#timing) | timeout, interval, clear|
 |[Data Types](#data-types)|Primitive Data Types(number, string, boolean, null, undefined), Non-Primitive (Reference) Types(array, object, date)|
-|[Strings](#strings)|Template Literals, length, padStart, padEnd, startsWith, endsWith, indexOf, lastIndexOf, includes, slice, substring, substr, split, repeat, replace, trim, trimStart, trimEnd, toUpperCase, toLowerCase, charAt|
-|[Booleans](#booleans)| truthy, falsy(null, 0, "", [], undefined, NaN)|
+|[Strings](#strings)|Template Literals, length, padStart, padEnd, startsWith, endsWith, indexOf, lastIndexOf, includes, slice, substring, substr, split, repeat, replace, trim, trimStart, trimEnd, toUpperCase, toLowerCase, charAt, Conversion|
+|[Booleans](#booleans)| truthy, falsy(null, 0, "", [], undefined, NaN), Conversion|
 |[Numbers](#numbers)|Conversion(Number, BigInt, parseInt, parseFloat), Validations(isNaN), toFixed, toPrecision|
 |[Date](#date)|Declaration, Getters, Setters, Conversions|
 |[Arrays](#arrays)|length, validation, destructuring,  spread operator, push, pop, shift, unshift, sort, reverse, map, filter, find, findIndex, every, some, forEach, includes, indexOf, lastIndexOf, splice, slice, join|
@@ -526,6 +526,15 @@ console.log(str.length); // 5
 "Hi".padEnd(5, "!");             // "Hi!!!"
 ```
 
+### Conversion:
+```javascript
+String(123);          // "123"
+String(true);         // "true"
+
+(123).toString();     // "123"
+true.toString();      // "true"
+```
+
 <h2 id="booleans"> ✔️ Booleans: </h2>
 
 #### Falsy Values:
@@ -538,6 +547,19 @@ false     // Boolean false
 null      // Null
 undefined // Undefined
 NaN       // Not a Number
+```
+
+### Conversion:
+```javascript
+Boolean(1);        // true
+Boolean(0);        // false
+Boolean("Hello");  // true
+Boolean("");       // false
+
+!!1;               // true
+!!0;               // false
+!!"Hello";         // true
+!!"";              // false
 ```
 
 <h2 id="numbers"> ✔️ Numbers: </h2>
